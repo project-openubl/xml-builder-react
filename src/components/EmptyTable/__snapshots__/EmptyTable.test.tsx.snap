@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders without crashing 1`] = `
+<Fragment>
+  <Component
+    aria-label="Empty table"
+    cells={
+      Array [
+        "column1",
+        "column2",
+        "column3",
+      ]
+    }
+    rows={Array []}
+  >
+    <TableHeader />
+    <TableBody />
+  </Component>
+  <Card>
+    <CardBody>
+      <Bullseye>
+        <EmptyState>
+          <EmptyStateIcon
+            icon={[Function]}
+          />
+          <Title
+            headingLevel="h5"
+            size="lg"
+          >
+            No se encontraron resultados
+          </Title>
+          <EmptyStateBody>
+            No se encontraron resultados que correspondan al criterio de búsqueda selecionado. Elimine todos los filtros para ver los resultados.
+          </EmptyStateBody>
+          <EmptyStateSecondaryActions>
+            <Component
+              onClick={[MockFunction]}
+              variant="link"
+            >
+              Eliminar filtros
+            </Component>
+          </EmptyStateSecondaryActions>
+        </EmptyState>
+      </Bullseye>
+    </CardBody>
+  </Card>
+</Fragment>
+`;
