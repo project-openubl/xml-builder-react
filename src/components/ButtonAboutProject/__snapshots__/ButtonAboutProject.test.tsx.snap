@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders without crashing 1`] = `
+<Fragment>
+  <Component
+    aria-label="About button"
+    id="aboutButton"
+    onClick={[Function]}
+    variant="plain"
+  >
+    <HelpIcon
+      color="currentColor"
+      noVerticalAlign={false}
+      size="sm"
+      title={null}
+    />
+  </Component>
+  <AboutModal
+    appendTo={null}
+    backgroundImageSrc=""
+    brandImageAlt="Logo"
+    brandImageSrc="logo.png"
+    className=""
+    isOpen={false}
+    noAboutModalBoxContentContainer={false}
+    onClose={[Function]}
+    productName="Mi producto"
+    trademark="COPYRIGHT © 2020. PROJECT OPENUBL"
+  >
+    <TextContent>
+      <TextList
+        component="dl"
+      >
+        <TextListItem
+          component="dt"
+        >
+          Version
+        </TextListItem>
+        <TextListItem
+          component="dd"
+        >
+          1.0.0
+        </TextListItem>
+        <TextListItem
+          component="dt"
+        >
+          Source code
+        </TextListItem>
+        <TextListItem
+          component="dd"
+        >
+          <a
+            href="https://github.com/project-openubl/xml-builder"
+          >
+            Github
+          </a>
+        </TextListItem>
+        <TextListItem
+          component="dt"
+        >
+          Report issues
+        </TextListItem>
+        <TextListItem
+          component="dd"
+        >
+          <a
+            href="https://github.com/project-openubl/xml-builder/issues"
+          >
+            Github issues
+          </a>
+        </TextListItem>
+        <TextListItem
+          component="dt"
+        >
+          Documentation
+        </TextListItem>
+        <TextListItem
+          component="dd"
+        >
+          <a
+            href="https://project-openubl.gitbook.io/xml-builder/"
+          >
+            Documentation
+          </a>
+        </TextListItem>
+        <TextListItem
+          component="dt"
+        >
+          Videos
+        </TextListItem>
+        <TextListItem
+          component="dd"
+        >
+          <a
+            href="https://www.youtube.com/channel/UChq3xxjyDgjcU346rp0bbtA/"
+          >
+            Youtube
+          </a>
+        </TextListItem>
+        <TextListItem
+          component="dt"
+        >
+          Rest API documentation
+        </TextListItem>
+        <TextListItem
+          component="dd"
+        >
+          <a
+            href="https://app.swaggerhub.com/organizations/project-openubl"
+          >
+            Swaggerhub
+          </a>
+        </TextListItem>
+        <TextListItem
+          component="dt"
+        >
+          Licence
+        </TextListItem>
+        <TextListItem
+          component="dd"
+        >
+          <a
+            href="https://github.com/project-openubl/xml-builder/blob/master/LICENSE"
+          >
+            Eclipse Public License - v 2.0
+          </a>
+        </TextListItem>
+      </TextList>
+    </TextContent>
+  </AboutModal>
+</Fragment>
+`;

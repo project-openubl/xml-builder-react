@@ -1,6 +1,6 @@
 import React from "react";
 import { Table, TableHeader, TableBody, ICell } from "@patternfly/react-table";
-import { ErrorCircleOIcon } from "@patternfly/react-icons";
+import { SearchIcon } from "@patternfly/react-icons";
 import {
   Card,
   CardBody,
@@ -15,16 +15,16 @@ import {
 
 export interface Props {
   columns: (ICell | string)[];
-  onRetry: (event?: any) => void;
+  onClearAllFilters?: (event?: any) => void;
 }
 
 export interface State {}
 
-class ErrorTable extends React.Component<Props, State> {
+class TableEmpty extends React.Component<Props, State> {
   render() {
     return (
       <React.Fragment>
-        <Table cells={this.props.columns} rows={[]} aria-label="Error table">
+        <Table cells={this.props.columns} rows={[]} aria-label="Empty table">
           <TableHeader />
           <TableBody />
         </Table>
@@ -32,17 +32,24 @@ class ErrorTable extends React.Component<Props, State> {
           <CardBody>
             <Bullseye>
               <EmptyState>
-                <EmptyStateIcon icon={ErrorCircleOIcon} />
+                <EmptyStateIcon icon={SearchIcon} />
                 <Title headingLevel="h5" size="lg">
-                  ¡Ocurrió un error durante la extracción de datos!.
+                  No se encontraron resultados
                 </Title>
                 <EmptyStateBody>
-                  Intente de nuevo o refresque la página.
+                  No se encontraron resultados que correspondan al criterio de
+                  búsqueda selecionado. Elimine todos los filtros para ver los
+                  resultados.
                 </EmptyStateBody>
                 <EmptyStateSecondaryActions>
-                  <Button variant="link" onClick={this.props.onRetry}>
-                    Intentar de nuevo
-                  </Button>
+                  {this.props.onClearAllFilters && (
+                    <Button
+                      variant="link"
+                      onClick={this.props.onClearAllFilters}
+                    >
+                      Eliminar filtros
+                    </Button>
+                  )}
                 </EmptyStateSecondaryActions>
               </EmptyState>
             </Bullseye>
@@ -53,4 +60,4 @@ class ErrorTable extends React.Component<Props, State> {
   }
 }
 
-export default ErrorTable;
+export default TableEmpty;

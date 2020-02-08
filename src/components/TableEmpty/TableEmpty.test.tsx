@@ -1,12 +1,12 @@
 import React from "react";
 import { shallow } from "enzyme";
-import EmptyTable from "./EmptyTable";
+import TableEmpty from "./TableEmpty";
 import { Button } from "@patternfly/react-core";
 
 it("Renders without crashing", () => {
   const action = jest.fn();
   const wrapper = shallow(
-    <EmptyTable
+    <TableEmpty
       columns={["column1", "column2", "column3"]}
       onClearAllFilters={action}
     />
@@ -18,7 +18,7 @@ it("Renders without crashing", () => {
 it("Retry action is called when button clicked", () => {
   const action = jest.fn();
   const wrapper = shallow(
-    <EmptyTable
+    <TableEmpty
       columns={["column1", "column2", "column3"]}
       onClearAllFilters={action}
     />

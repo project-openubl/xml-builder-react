@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders without crashing 1`] = `
+<Fragment>
+  <Component
+    icon={
+      <ApplicationsIcon
+        color="currentColor"
+        noVerticalAlign={false}
+        size="sm"
+        title={null}
+      />
+    }
+    onClick={[Function]}
+    variant="link"
+  >
+    My Button
+  </Component>
+  <Modal
+    actions={
+      Array [
+        <Unknown
+          onClick={[Function]}
+          variant="link"
+        >
+          Close
+        </Unknown>,
+      ]
+    }
+    appendTo={<body />}
+    ariaDescribedById=""
+    className=""
+    hideTitle={false}
+    isFooterLeftAligned={true}
+    isLarge={false}
+    isOpen={false}
+    isSmall={true}
+    onClose={[Function]}
+    showClose={true}
+    title="My modal title"
+  >
+    <Text
+      component="blockquote"
+    >
+      My modal content
+    </Text>
+  </Modal>
+</Fragment>
+`;

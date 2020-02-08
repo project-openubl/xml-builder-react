@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders without crashing 1`] = `
+<PageHeader
+  logo={
+    <Brand
+      alt="Project OpenUBL"
+      src="logo-navbar.svg"
+    />
+  }
+  showNavToggle={true}
+  toolbar={
+    <React.Fragment>
+      <Toolbar>
+        <ToolbarGroup
+          className="pf-u-screen-reader pf-u-visible-on-lg"
+        >
+          <ToolbarItem>
+            <button
+              type="button"
+            >
+              About
+            </button>
+          </ToolbarItem>
+        </ToolbarGroup>
+      </Toolbar>
+    </React.Fragment>
+  }
+/>
+`;

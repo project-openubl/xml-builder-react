@@ -2,10 +2,10 @@ import * as React from "react";
 
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
-import ErrorTable from "./index";
+import TableError from "./index";
 
-storiesOf("ErrorTable", module).add("Error table", () => (
-  <ErrorTable
+storiesOf("Table - Error", module).add("Default", () => (
+  <TableError
     columns={["column1", "column2", "column3", "column4"]}
     onRetry={event => {
       action(event);
