@@ -7,7 +7,7 @@ import InputSearchForm from "./InputSearchForm";
 storiesOf("Input | Search", module).add("Default", () => (
   <InputSearchForm
     onSubmit={form => {
-      action(JSON.stringify(form));
+      action("submit")(JSON.stringify(form));
     }}
   />
 ));

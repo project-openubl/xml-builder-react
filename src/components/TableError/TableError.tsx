@@ -15,16 +15,17 @@ import {
 
 export interface Props {
   columns: (ICell | string)[];
-  onRetry: (event?: any) => void;
+  onRetry?: (event?: any) => void;
 }
 
 export interface State {}
 
 class TableError extends React.Component<Props, State> {
   render() {
+    const { columns, onRetry } = this.props;
     return (
       <React.Fragment>
-        <Table cells={this.props.columns} rows={[]} aria-label="Error table">
+        <Table cells={columns} rows={[]} aria-label="Error table">
           <TableHeader />
           <TableBody />
         </Table>
@@ -34,16 +35,18 @@ class TableError extends React.Component<Props, State> {
               <EmptyState>
                 <EmptyStateIcon icon={ErrorCircleOIcon} />
                 <Title headingLevel="h5" size="lg">
-                  ¡Ocurrió un error durante la extracción de datos!.
+                  ¡Ocurrió un error durante la extracción de datos
                 </Title>
                 <EmptyStateBody>
                   Intente de nuevo o refresque la página.
                 </EmptyStateBody>
-                <EmptyStateSecondaryActions>
-                  <Button variant="link" onClick={this.props.onRetry}>
-                    Intentar de nuevo
-                  </Button>
-                </EmptyStateSecondaryActions>
+                {onRetry && (
+                  <EmptyStateSecondaryActions>
+                    <Button variant="link" onClick={onRetry}>
+                      Intentar de nuevo
+                    </Button>
+                  </EmptyStateSecondaryActions>
+                )}
               </EmptyState>
             </Bullseye>
           </CardBody>
