@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders without crashing 1`] = `
+<Fragment>
+  <PageSection
+    variant="light"
+  >
+    <TextContent>
+      <Text
+        component="h1"
+      >
+        Comprobantes electrónicos
+      </Text>
+      <Text
+        component="small"
+      >
+        Acá podras simular la creación de comprobantes electrónicos.
+      </Text>
+    </TextContent>
+    <br />
+    <Component
+      activeKey={0}
+      isFilled={true}
+      onSelect={[MockFunction]}
+    >
+      <Tab
+        eventKey={0}
+        title="Documentos básicos"
+      />
+      <Tab
+        eventKey={1}
+        title="Baja"
+      />
+    </Component>
+  </PageSection>
+  <PageSection />
+</Fragment>
+`;
