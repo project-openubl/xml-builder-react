@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders without crashing 1`] = `
+<SelectCatalog
+  options={
+    Map {
+      "" => "Seleccione",
+      "INTERES_POR_MORA" => "INTERES POR MORA",
+      "AUMENTO_EN_EL_VALOR" => "AUMENTO EN EL VALOR",
+      "PENALIDAD_OTROS_CONCEPTOS" => "PENALIDAD OTROS CONCEPTOS",
+    }
+  }
+/>
+`;

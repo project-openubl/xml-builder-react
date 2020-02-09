@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders without crashing 1`] = `
+<SelectCatalog
+  options={
+    Map {
+      "" => "Seleccione",
+      "DOC_TRIB_NO_DOM_SIN_RUC" => "DOC. TRIB. NO DOM. SIN RUC",
+      "DNI" => "DNI",
+      "EXTRANJERIA" => "EXTRANJERIA",
+      "RUC" => "RUC",
+      "PASAPORTE" => "PASAPORTE",
+      "DEC_DIPLOMATICA" => "DEC_DIPLOMATICA",
+    }
+  }
+/>
+`;

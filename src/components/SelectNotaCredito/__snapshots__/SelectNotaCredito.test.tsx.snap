@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders without crashing 1`] = `
+<SelectCatalog
+  options={
+    Map {
+      "" => "Seleccione",
+      "ANULACION_DE_LA_OPERACION" => "ANULACIÓN DE LA OPERACIÓN",
+      "ANULACION_POR_ERROR_EN_EL_RUC" => "ANULACIÓN POR ERROR EN RUC",
+      "CORRECCION_POR_ERROR_EN_LA_DESCRIPCION" => "CORRECCION POR ERROR EN DESCRIPCION",
+      "DESCUENTO_GLOBAL" => "DESCUENTO GLOBAL",
+      "DESCUENTO_POR_ITEM" => "DESCUENTO POR ITEM",
+      "DEVOLUCION_TOTAL" => "DEVOLUCIÓN TOTAL",
+      "DEVOLUCION_POR_ITEM" => "DEVOLUCION POR ITEM",
+      "BONIFICACION" => "BONIFICACIÓN",
+      "DISMINUCION_EN_EL_VALOR" => "DISMINUCIÓN EN EL VALOR",
+      "OTROS_CONCEPTOS" => "OTROS CONCEPTOS",
+    }
+  }
+/>
+`;

@@ -16,7 +16,7 @@ import {
 } from "@patternfly/react-core";
 import { MusicIcon } from "@patternfly/react-icons";
 
-storiesOf("Layout - Basic Project", module).add("Default", () => (
+storiesOf("Project. Layout Basic", module).add("Default", () => (
   <LayoutBasicProject
     version="1.0.0"
     productName="Mi producto"

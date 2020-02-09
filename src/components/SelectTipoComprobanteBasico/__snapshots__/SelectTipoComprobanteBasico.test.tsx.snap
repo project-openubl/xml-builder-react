@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders without crashing 1`] = `
+<SelectCatalog
+  options={
+    Map {
+      "" => "Seleccione",
+      "FACTURA" => "FACTURA",
+      "BOLETA" => "BOLETA",
+      "NOTA_CREDITO" => "NOTA DE CRÉDITO",
+      "NOTA_DEBITO" => "NOTA DE DÉBITO",
+    }
+  }
+/>
+`;

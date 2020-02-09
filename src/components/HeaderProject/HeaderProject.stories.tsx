@@ -5,7 +5,7 @@ import { Button } from "@patternfly/react-core";
 import { HeartbeatIcon } from "@patternfly/react-icons";
 import HeaderProject from "./HeaderProject";
 
-storiesOf("Header - Project", module).add("Default", () => (
+storiesOf("Project. Header", module).add("Default", () => (
   <React.Fragment>
     <div style={{ backgroundColor: "black" }}>
       <HeaderProject

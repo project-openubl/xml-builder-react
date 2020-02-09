@@ -3,7 +3,7 @@ import * as React from "react";
 import { storiesOf } from "@storybook/react";
 import ButtonAboutProject from "./ButtonAboutProject";
 
-storiesOf("Button - About Project", module).add("Default", () => (
+storiesOf("Button. About Project", module).add("Default", () => (
   <React.Fragment>
     Click me!
     <ButtonAboutProject

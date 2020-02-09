@@ -1,13 +1,13 @@
 import React from "react";
 import { FormSelect, FormSelectOption } from "@patternfly/react-core";
 
-export interface ControlProps {
+export interface SelectCatalogControlProps {
   value?: string;
   onChange?: (selected: string) => any;
+  error?: any;
 }
 
-export interface Props extends ControlProps {
-  error?: any;
+export interface Props extends SelectCatalogControlProps {
   options: Map<string, string>;
 }
 
@@ -33,8 +33,8 @@ class SelectCatalog extends React.Component<Props, State> {
   };
 
   render() {
-    const { error, options } = this.props;
     const { selected } = this.state;
+    const { value, onChange, error, options, ...rest } = this.props;
 
     return (
       <React.Fragment>
@@ -42,7 +42,8 @@ class SelectCatalog extends React.Component<Props, State> {
           value={selected}
           onChange={this.handleOnChange}
           isValid={!error}
-          aria-label="Tipo comprobante Select"
+          aria-label="Select catalog"
+          {...rest}
         >
           {Array.from(options.keys()).map((key, index) => {
             const label = options.get(key) || "Invalid key";

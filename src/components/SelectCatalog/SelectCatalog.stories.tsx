@@ -9,7 +9,7 @@ options.set("key1", "value1");
 options.set("key2", "value2");
 options.set("key3", "value3");
 
-storiesOf("Select - Catalog", module)
+storiesOf("Select. Catalog", module)
   .add("Default", () => <SelectCatalog options={options} onChange={action} />)
   .add("Default value", () => (
     <SelectCatalog options={options} onChange={action} value={"key3"} />

@@ -3,7 +3,7 @@
 exports[`Renders without crashing 1`] = `
 <Fragment>
   <FormSelect
-    aria-label="Tipo comprobante Select"
+    aria-label="Select catalog"
     className=""
     isDisabled={false}
     isRequired={false}
