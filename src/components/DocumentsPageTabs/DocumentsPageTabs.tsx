@@ -5,8 +5,7 @@ import {
   TextContent,
   Text,
   Tabs,
-  Tab,
-  FormGroup
+  Tab
 } from "@patternfly/react-core";
 
 export interface Props {

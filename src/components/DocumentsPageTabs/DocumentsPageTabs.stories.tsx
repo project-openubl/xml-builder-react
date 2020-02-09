@@ -4,7 +4,7 @@ import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import DocumentsPageTabs from "./DocumentsPageTabs";
 
-storiesOf("Tabs. Documents", module)
+storiesOf("Tabs | Documents", module)
   .add("Tab0 selected", () => (
     <DocumentsPageTabs
       activeKey={0}
