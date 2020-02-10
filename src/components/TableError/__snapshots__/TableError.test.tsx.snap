@@ -27,7 +27,7 @@ exports[`Renders without crashing 1`] = `
             headingLevel="h5"
             size="lg"
           >
-            ¡Ocurrió un error durante la extracción de datos!.
+            ¡Ocurrió un error durante la extracción de datos
           </Title>
           <EmptyStateBody>
             Intente de nuevo o refresque la página.
