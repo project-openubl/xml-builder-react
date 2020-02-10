@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.js": "/main.8e645d9ba08139e2ba83.bundle.js",
+    "main.js.map": "/main.8e645d9ba08139e2ba83.bundle.js.map",
+    "runtime~main.js": "/runtime~main.8e645d9ba08139e2ba83.bundle.js",
+    "runtime~main.js.map": "/runtime~main.8e645d9ba08139e2ba83.bundle.js.map",
+    "vendors~main.css": "/static/css/vendors~main.6465232c.chunk.css",
+    "vendors~main.js": "/vendors~main.8e645d9ba08139e2ba83.bundle.js",
+    "vendors~main.css.map": "/static/css/vendors~main.6465232c.chunk.css.map",
+    "vendors~main.js.map": "/vendors~main.8e645d9ba08139e2ba83.bundle.js.map",
+    "iframe.html": "/iframe.html",
+    "precache-manifest.0c110c0fa91bf4eed311acc6f7421633.js": "/precache-manifest.0c110c0fa91bf4eed311acc6f7421633.js",
+    "service-worker.js": "/service-worker.js",
+    "static/media/patternfly.css": "/static/media/pficon.f907e666.ttf",
+    "static/media/logo-navbar.svg": "/static/media/logo-navbar.f314a279.svg",
+    "static/media/logo.png": "/static/media/logo.9b4f3b1c.png",
+    "static/media/background-image.css": "/static/media/pfbg_768@2x.0099dea3.jpg",
+    "static/media/about-modal-box.css": "/static/media/pfbg_992@2x.1423e11e.jpg",
+    "static/media/style.css": "/static/media/style.5ae4a044.css",
+    "vendors~main.8e645d9ba08139e2ba83.bundle.js.LICENSE.txt": "/vendors~main.8e645d9ba08139e2ba83.bundle.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "runtime~main.8e645d9ba08139e2ba83.bundle.js",
+    "static/css/vendors~main.6465232c.chunk.css",
+    "vendors~main.8e645d9ba08139e2ba83.bundle.js",
+    "main.8e645d9ba08139e2ba83.bundle.js"
+  ]
+}
