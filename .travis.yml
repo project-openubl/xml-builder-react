@@ -1,0 +1,24 @@
+language: node_js
+node_js:
+- 'stable'
+install:
+- yarn install
+
+jobs:
+    include:
+    - stage: Test
+      script:
+        - yarn test --watchAll=false -- --coverage && npx codecov
+    - stage: GithubPage
+      script:
+        - yarn build-storybook
+      deploy:
+        provider: pages
+        skip_cleanup: true
+        github_token: $GITHUB_TOKEN
+        local_dir: storybook-static
+        repo: project-openubl/xml-builder-react
+        target_branch: gh-pages
+        keep_history: true
+        on:
+          branch: master
