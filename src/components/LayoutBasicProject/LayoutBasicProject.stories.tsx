@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import { storiesOf } from "@storybook/react";
-import LayoutBasicProject from "./LayoutBasicProject";
+import { LayoutBasicProject } from "./LayoutBasicProject";
 
 import {
   PageSection,

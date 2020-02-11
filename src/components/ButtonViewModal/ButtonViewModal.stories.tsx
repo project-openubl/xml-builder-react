@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import { storiesOf } from "@storybook/react";
-import ButtonViewModal from "./ButtonViewModal";
+import { ButtonViewModal } from "./ButtonViewModal";
 
 storiesOf("Button | View modal", module).add("Default", () => (
   <ButtonViewModal

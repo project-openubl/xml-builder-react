@@ -8,7 +8,7 @@ import {
   ButtonVariant
 } from "@patternfly/react-core";
 import { HelpIcon } from "@patternfly/react-icons";
-// import brandImg from "../../styles/assets/images/logo.png";
+import brandImg from "../../styles/assets/images/logo.png";
 
 export interface ButtonAboutProjectProps {
   version: string;
@@ -63,8 +63,7 @@ export class ButtonAboutProject extends React.Component<ButtonAboutProjectProps,
           isOpen={isOpen}
           onClose={this.toggleButton}
           trademark="COPYRIGHT © 2020. PROJECT OPENUBL"
-          // brandImageSrc={brandImg}
-          brandImageSrc={''}
+          brandImageSrc={brandImg}
           brandImageAlt="Logo"
           productName={productName}
         >
@@ -107,5 +106,3 @@ export class ButtonAboutProject extends React.Component<ButtonAboutProjectProps,
     );
   }
 }
-
-export default ButtonAboutProject;

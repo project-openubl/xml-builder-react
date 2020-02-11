@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
-import TableEmpty from "./TableEmpty";
+import { TableEmpty } from "./TableEmpty";
 
 storiesOf("Table | Empty", module).add("Default", () => (
   <TableEmpty

@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
-import TableError from "./index";
+import { TableError } from "./index";
 
 storiesOf("Table | Error", module)
   .add("With retry", () => (
