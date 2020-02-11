@@ -2,11 +2,12 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import { InputSearchForm } from 'xml-builder-react'
+import { ButtonViewModal } from 'xml-builder-react'
 
 const App = () => {
   return (
     <div className="App">
+      {/* <SearchBoxForm></SearchBoxForm> */}
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

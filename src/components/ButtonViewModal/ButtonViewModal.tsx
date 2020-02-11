@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import * as React from 'react';
 import { Text, Button, TextVariants, Modal } from "@patternfly/react-core";
 import { ApplicationsIcon } from "@patternfly/react-icons";
 
@@ -13,7 +13,7 @@ const ButtonViewModal: React.FC<Props> = ({
   buttonLabel,
   modalContent
 }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = React.useState(false);
 
   const handleModalToggle = () => {
     setIsModalOpen(!isModalOpen);

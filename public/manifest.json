@@ -1,6 +1,6 @@
 {
-  "short_name": "XML Builder React",
-  "name": "Reactjs components for XML Builder",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",

@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from 'react';
 import { Table, TableHeader, TableBody, ICell } from "@patternfly/react-table";
 import { SearchIcon } from "@patternfly/react-icons";
 import {

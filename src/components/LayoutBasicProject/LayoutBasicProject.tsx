@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from 'react';
 import { Page, PageSidebar, SkipToContent } from "@patternfly/react-core";
 import ButtonAboutProject from "../ButtonAboutProject";
 import HeaderProject from "../HeaderProject";

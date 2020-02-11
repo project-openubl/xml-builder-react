@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from 'react';
 import { FormSelect, FormSelectOption } from "@patternfly/react-core";
 
 export interface SelectCatalogControlProps {

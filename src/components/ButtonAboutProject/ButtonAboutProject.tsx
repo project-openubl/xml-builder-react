@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from 'react';
 import {
   AboutModal,
   TextContent,
@@ -8,7 +8,7 @@ import {
   ButtonVariant
 } from "@patternfly/react-core";
 import { HelpIcon } from "@patternfly/react-icons";
-import brandImg from "../../img/logo.png";
+// import brandImg from "../../img/logo.png";
 
 export interface Props {
   version: string;
@@ -63,7 +63,8 @@ class ButtonAboutProject extends React.Component<Props, State> {
           isOpen={isOpen}
           onClose={this.toggleButton}
           trademark="COPYRIGHT © 2020. PROJECT OPENUBL"
-          brandImageSrc={brandImg}
+          // brandImageSrc={brandImg}
+          brandImageSrc={''}
           brandImageAlt="Logo"
           productName={productName}
         >

@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from 'react';
 import {
   PageHeader,
   Brand,
@@ -8,7 +8,7 @@ import {
 } from "@patternfly/react-core";
 import { css } from "@patternfly/react-styles";
 import accessibleStyles from "@patternfly/react-styles/css/utilities/Accessibility/accessibility";
-import imgBrandNavBar from "../../img/logo-navbar.svg";
+// import imgBrandNavBar from "../../img/logo-navbar.svg";
 
 export interface Props {
   aboutButton: React.ReactNode;
@@ -38,7 +38,7 @@ class HeaderProject extends React.Component<Props, State> {
   render() {
     return (
       <PageHeader
-        logo={<Brand src={imgBrandNavBar} alt="Project OpenUBL" />}
+        // logo={<Brand src={imgBrandNavBar} alt="Project OpenUBL" />}
         toolbar={this.renderPageToolbar()}
         showNavToggle
       />

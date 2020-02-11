@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from 'react';
 import { shallow } from "enzyme";
 import TableEmpty from "./TableEmpty";
 import { Button } from "@patternfly/react-core";
