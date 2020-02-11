@@ -48,6 +48,7 @@ export default {
         // "node_modules/react-dom/index.js": ["render"],
         "node_modules/exenv/index.js": ["canUseDOM"],
         "node_modules/lodash/lodash.js": ["isUndefined"],
+        "node_modules/lodash/index.js": ["mergeWith"],
       }
     }),
     postcss({

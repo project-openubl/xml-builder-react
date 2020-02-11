@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import { InputSearchForm } from 'xml-builder-react'
+
 const App = () => {
   return (
     <div className="App">
