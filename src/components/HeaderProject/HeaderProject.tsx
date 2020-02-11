@@ -10,13 +10,13 @@ import { css } from "@patternfly/react-styles";
 import accessibleStyles from "@patternfly/react-styles/css/utilities/Accessibility/accessibility";
 // import imgBrandNavBar from "../../img/logo-navbar.svg";
 
-export interface Props {
+export interface HeaderProjectProps {
   aboutButton: React.ReactNode;
 }
 
-export interface State {}
+interface State {}
 
-class HeaderProject extends React.Component<Props, State> {
+export class HeaderProject extends React.Component<HeaderProjectProps, State> {
   renderPageToolbar = () => {
     const { aboutButton } = this.props;
     return (
@@ -45,5 +45,3 @@ class HeaderProject extends React.Component<Props, State> {
     );
   }
 }
-
-export default HeaderProject;

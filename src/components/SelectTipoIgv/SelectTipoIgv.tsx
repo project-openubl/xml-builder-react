@@ -1,5 +1,5 @@
 import * as React from 'react';
-import SelectCatalog from "../SelectCatalog";
+import { SelectCatalog } from "../SelectCatalog";
 import { SelectCatalogControlProps } from "../SelectCatalog/SelectCatalog";
 
 type OptionType =
@@ -51,7 +51,7 @@ const options: Map<OptionType, string> = new Map([
   ["EXPORTACION", "EXPORTACION"]
 ]);
 
-class SelectTipoIgv extends React.Component<SelectCatalogControlProps> {
+export class SelectTipoIgv extends React.Component<SelectCatalogControlProps> {
   render() {
     const { error, value, onChange, ...rest } = this.props;
     return (
@@ -65,5 +65,3 @@ class SelectTipoIgv extends React.Component<SelectCatalogControlProps> {
     );
   }
 }
-
-export default SelectTipoIgv;

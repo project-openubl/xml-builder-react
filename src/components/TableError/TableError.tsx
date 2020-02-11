@@ -18,9 +18,9 @@ export interface Props {
   onRetry?: (event?: any) => void;
 }
 
-export interface State {}
+interface State {}
 
-class TableError extends React.Component<Props, State> {
+export class TableError extends React.Component<Props, State> {
   render() {
     const { columns, onRetry } = this.props;
     return (
@@ -55,5 +55,3 @@ class TableError extends React.Component<Props, State> {
     );
   }
 }
-
-export default TableError;

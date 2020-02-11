@@ -1,9 +1,9 @@
-import * as React from 'react';
+import * as React from "react";
 import { Page, PageSidebar, SkipToContent } from "@patternfly/react-core";
-import ButtonAboutProject from "../ButtonAboutProject";
-import HeaderProject from "../HeaderProject";
+import { ButtonAboutProject } from "../ButtonAboutProject";
+import { HeaderProject } from "../HeaderProject";
 
-export interface Props {
+export interface LayoutBasicProjectProps {
   version: string;
   productName: string;
   swaggerApiURL: string;
@@ -13,9 +13,12 @@ export interface Props {
   sidebar: React.ReactNode;
 }
 
-export interface State {}
+interface State {}
 
-class LayoutBasicProject extends React.Component<Props, State> {
+export class LayoutBasicProject extends React.Component<
+  LayoutBasicProjectProps,
+  State
+> {
   renderPageSkipToContent = () => {
     return (
       <SkipToContent href="#primary-app-container">
@@ -63,5 +66,3 @@ class LayoutBasicProject extends React.Component<Props, State> {
     );
   }
 }
-
-export default LayoutBasicProject;

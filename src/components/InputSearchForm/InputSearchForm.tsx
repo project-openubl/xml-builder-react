@@ -10,16 +10,16 @@ import { SearchIcon } from "@patternfly/react-icons";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 
-export type FormData = {
+export type SearchBoxFormData = {
   filterText: string;
 };
 
-export interface Props {
+export interface SearchBoxFormProps {
   placeholder?: string;
-  onSubmit: (data: FormData) => void;
+  onSubmit: (data: SearchBoxFormData) => void;
 }
 
-const SearchBoxForm: React.FC<Props> = ({ placeholder, onSubmit }) => {
+export const SearchBoxForm: React.FC<SearchBoxFormProps> = ({ placeholder, onSubmit }) => {
   const validationSchema = yup.object().shape({
     filterText: yup
       .string()
@@ -27,7 +27,7 @@ const SearchBoxForm: React.FC<Props> = ({ placeholder, onSubmit }) => {
       .max(250, "Este campo debe de contener menos de 250 caracteres.")
   });
 
-  const { register, errors, handleSubmit } = useForm<FormData>({
+  const { register, errors, handleSubmit } = useForm<SearchBoxFormData>({
     validationSchema
   });
 
@@ -56,5 +56,3 @@ const SearchBoxForm: React.FC<Props> = ({ placeholder, onSubmit }) => {
     </React.Fragment>
   );
 };
-
-export default SearchBoxForm;

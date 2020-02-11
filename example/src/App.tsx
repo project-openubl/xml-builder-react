@@ -2,12 +2,12 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import { ButtonViewModal } from 'xml-builder-react'
+import { TableEmpty } from 'xml-builder-react'
 
 const App = () => {
   return (
     <div className="App">
-      {/* <SearchBoxForm></SearchBoxForm> */}
+      <TableEmpty columns={["uno"]}></TableEmpty>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

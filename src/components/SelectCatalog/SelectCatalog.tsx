@@ -7,16 +7,16 @@ export interface SelectCatalogControlProps {
   error?: any;
 }
 
-export interface Props extends SelectCatalogControlProps {
+export interface SelectCatalogProps extends SelectCatalogControlProps {
   options: Map<string, string>;
 }
 
-export interface State {
+interface State {
   selected: string;
 }
 
-class SelectCatalog extends React.Component<Props, State> {
-  constructor(props: Props) {
+export class SelectCatalog extends React.Component<SelectCatalogProps, State> {
+  constructor(props: SelectCatalogProps) {
     super(props);
     this.state = {
       selected: props.value || ""
@@ -54,5 +54,3 @@ class SelectCatalog extends React.Component<Props, State> {
     );
   }
 }
-
-export default SelectCatalog;

@@ -1,11 +1,11 @@
 {
   "name": "xml-builder-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "This library provides a set of common React components for use with the XML Builder family.",
   "main": "dist/js/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/js/index.d.ts",
-  "private": true,
+  "private": false,
   "publishConfig": {
     "access": "public",
     "tag": "prerelease"

@@ -1,14 +1,14 @@
-import * as React from 'react';
+import * as React from "react";
 import { Text, Button, TextVariants, Modal } from "@patternfly/react-core";
 import { ApplicationsIcon } from "@patternfly/react-icons";
 
-export interface Props {
+export interface ButtonViewModalProps {
   buttonLabel: string;
   modalTitle: string;
   modalContent: string;
 }
 
-const ButtonViewModal: React.FC<Props> = ({
+export const ButtonViewModal: React.FC<ButtonViewModalProps> = ({
   modalTitle,
   buttonLabel,
   modalContent
@@ -45,5 +45,3 @@ const ButtonViewModal: React.FC<Props> = ({
     </React.Fragment>
   );
 };
-
-export default ButtonViewModal;

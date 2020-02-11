@@ -1,5 +1,5 @@
-import * as React from 'react';
-import SelectCatalog from "../SelectCatalog";
+import * as React from "react";
+import { SelectCatalog } from "../SelectCatalog";
 import { SelectCatalogControlProps } from "../SelectCatalog/SelectCatalog";
 
 type OptionType =
@@ -21,7 +21,7 @@ const options: Map<OptionType, string> = new Map([
   ["DEC_DIPLOMATICA", "DEC_DIPLOMATICA"]
 ]);
 
-class SelectDocumentoIdentidad extends React.Component<
+export class SelectDocumentoIdentidad extends React.Component<
   SelectCatalogControlProps
 > {
   render() {
@@ -37,5 +37,3 @@ class SelectDocumentoIdentidad extends React.Component<
     );
   }
 }
-
-export default SelectDocumentoIdentidad;

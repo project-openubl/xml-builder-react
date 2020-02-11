@@ -30,7 +30,7 @@ exports[`Renders without crashing 1`] = `
             No se encontraron resultados
           </Title>
           <EmptyStateBody>
-            No se encontraron resultados que correspondan al criterio de búsqueda selecionado. Elimine todos los filtros para ver los resultados.
+            No se encontraron resultados que correspondan al criterio de búsqueda seleccionado. Elimine todos los filtros para ver los resultados.
           </EmptyStateBody>
           <EmptyStateSecondaryActions>
             <Component

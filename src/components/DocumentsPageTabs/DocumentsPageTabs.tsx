@@ -8,7 +8,7 @@ import {
   Tab
 } from "@patternfly/react-core";
 
-export interface Props {
+export interface DocumentsPageTabsProps {
   activeKey: number;
   onTabSelect: (
     event: React.MouseEvent<HTMLElement, MouseEvent>,
@@ -17,7 +17,7 @@ export interface Props {
   topPageSection?: React.ReactNode;
 }
 
-const DocumentsPageTabs: React.FC<Props> = ({
+export const DocumentsPageTabs: React.FC<DocumentsPageTabsProps> = ({
   activeKey,
   onTabSelect,
   topPageSection,
@@ -43,5 +43,3 @@ const DocumentsPageTabs: React.FC<Props> = ({
     </React.Fragment>
   );
 };
-
-export default DocumentsPageTabs;

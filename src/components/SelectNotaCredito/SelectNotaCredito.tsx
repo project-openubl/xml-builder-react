@@ -1,8 +1,8 @@
-import * as React from 'react';
-import SelectCatalog from "../SelectCatalog";
+import * as React from "react";
+import { SelectCatalog } from "../SelectCatalog";
 import { SelectCatalogControlProps } from "../SelectCatalog/SelectCatalog";
 
-export type OptionType =
+type OptionType =
   | ""
   | "ANULACION_DE_LA_OPERACION"
   | "ANULACION_POR_ERROR_EN_EL_RUC"
@@ -15,7 +15,7 @@ export type OptionType =
   | "DISMINUCION_EN_EL_VALOR"
   | "OTROS_CONCEPTOS";
 
-export const options: Map<OptionType, string> = new Map([
+const options: Map<OptionType, string> = new Map([
   ["", "Seleccione"],
   ["ANULACION_DE_LA_OPERACION", "ANULACIÓN DE LA OPERACIÓN"],
   ["ANULACION_POR_ERROR_EN_EL_RUC", "ANULACIÓN POR ERROR EN RUC"],
@@ -32,7 +32,9 @@ export const options: Map<OptionType, string> = new Map([
   ["OTROS_CONCEPTOS", "OTROS CONCEPTOS"]
 ]);
 
-class SelectNotaCredito extends React.Component<SelectCatalogControlProps> {
+export class SelectNotaCredito extends React.Component<
+  SelectCatalogControlProps
+> {
   render() {
     const { error, value, onChange, ...rest } = this.props;
     return (
@@ -46,5 +48,3 @@ class SelectNotaCredito extends React.Component<SelectCatalogControlProps> {
     );
   }
 }
-
-export default SelectNotaCredito;

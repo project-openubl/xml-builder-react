@@ -10,7 +10,7 @@ import {
 import { HelpIcon } from "@patternfly/react-icons";
 // import brandImg from "../../styles/assets/images/logo.png";
 
-export interface Props {
+export interface ButtonAboutProjectProps {
   version: string;
   productName: string;
   githubSourceCodeURL: string;
@@ -19,12 +19,12 @@ export interface Props {
   swaggerApiURL: string;
 }
 
-export interface State {
+interface State {
   isOpen: boolean;
 }
 
-class ButtonAboutProject extends React.Component<Props, State> {
-  constructor(props: Props) {
+export class ButtonAboutProject extends React.Component<ButtonAboutProjectProps, State> {
+  constructor(props: ButtonAboutProjectProps) {
     super(props);
     this.state = {
       isOpen: false

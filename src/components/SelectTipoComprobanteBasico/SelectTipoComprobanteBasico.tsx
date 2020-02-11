@@ -1,15 +1,15 @@
-import * as React from 'react';
-import SelectCatalog from "../SelectCatalog";
+import * as React from "react";
+import { SelectCatalog } from "../SelectCatalog";
 import { SelectCatalogControlProps } from "../SelectCatalog/SelectCatalog";
 
-export type OptionType =
+type OptionType =
   | ""
   | "FACTURA"
   | "BOLETA"
   | "NOTA_CREDITO"
   | "NOTA_DEBITO";
 
-export const options: Map<OptionType, string> = new Map([
+const options: Map<OptionType, string> = new Map([
   ["", "Seleccione"],
   ["FACTURA", "FACTURA"],
   ["BOLETA", "BOLETA"],
@@ -17,7 +17,7 @@ export const options: Map<OptionType, string> = new Map([
   ["NOTA_DEBITO", "NOTA DE DÉBITO"]
 ]);
 
-class SelectTipoComprobanteBasico extends React.Component<
+export class SelectTipoComprobanteBasico extends React.Component<
   SelectCatalogControlProps
 > {
   render() {
@@ -33,5 +33,3 @@ class SelectTipoComprobanteBasico extends React.Component<
     );
   }
 }
-
-export default SelectTipoComprobanteBasico;

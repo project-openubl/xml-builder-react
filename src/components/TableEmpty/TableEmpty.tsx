@@ -13,14 +13,14 @@ import {
   Button
 } from "@patternfly/react-core";
 
-export interface Props {
+export interface TableEmptyProps {
   columns: (ICell | string)[];
   onClearAllFilters?: (event?: any) => void;
 }
 
-export interface State {}
+interface State {}
 
-class TableEmpty extends React.Component<Props, State> {
+export class TableEmpty extends React.Component<TableEmptyProps, State> {
   render() {
     return (
       <React.Fragment>
@@ -38,7 +38,7 @@ class TableEmpty extends React.Component<Props, State> {
                 </Title>
                 <EmptyStateBody>
                   No se encontraron resultados que correspondan al criterio de
-                  búsqueda selecionado. Elimine todos los filtros para ver los
+                  búsqueda seleccionado. Elimine todos los filtros para ver los
                   resultados.
                 </EmptyStateBody>
                 <EmptyStateSecondaryActions>
@@ -59,5 +59,3 @@ class TableEmpty extends React.Component<Props, State> {
     );
   }
 }
-
-export default TableEmpty;
