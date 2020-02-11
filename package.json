@@ -1,10 +1,29 @@
 {
   "name": "xml-builder-react",
   "version": "0.1.0",
+  "description": "This library provides a set of common React components for use with the XML Builder family.",
   "main": "dist/js/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/js/index.d.ts",
-  "private": false,
+  "private": true,
+  "publishConfig": {
+    "access": "public",
+    "tag": "prerelease"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xml-builder/xml-builder-react.git"
+  },
+  "keywords": [
+    "react",
+    "xml-builder"
+  ],
+  "author": "Project OpenUBL",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xml-builder/xml-builder-react/issues"
+  },
+  "homepage": "https://github.com/xml-builder/xml-builder-react#readme",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -54,13 +73,13 @@
     "@patternfly/react-core": "^3.134.2",
     "@patternfly/react-icons": "^3.14.42",
     "@patternfly/react-table": "^2.25.6",
-    "@storybook/addon-actions": "^6.0.0-alpha.9",
-    "@storybook/addon-docs": "^6.0.0-alpha.9",
+    "@storybook/addon-actions": "^6.0.0-alpha.10",
+    "@storybook/addon-docs": "^6.0.0-alpha.10",
     "@storybook/addon-info": "^6.0.0-alpha.2",
-    "@storybook/addon-links": "^6.0.0-alpha.9",
-    "@storybook/addons": "^6.0.0-alpha.9",
+    "@storybook/addon-links": "^6.0.0-alpha.10",
+    "@storybook/addons": "^6.0.0-alpha.10",
     "@storybook/preset-create-react-app": "^1.5.2",
-    "@storybook/react": "^6.0.0-alpha.9",
+    "@storybook/react": "^6.0.0-alpha.10",
     "@types/yup": "^0.26.30",
     "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
     "babel-plugin-typescript-to-proptypes": "^1.2.1",
