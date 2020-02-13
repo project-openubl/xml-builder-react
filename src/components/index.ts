@@ -2,6 +2,7 @@
 export * from './ButtonAboutProject';
 export * from './ButtonViewModal';
 export * from './DocumentRequestResponseViewer';
+export * from './FormStandardDocument';
 export * from './FormVoidedDocument';
 export * from './HeaderProject';
 export * from './InputSearchForm';
@@ -16,6 +17,7 @@ export * from './SelectNotaCredito';
 export * from './SelectNotaDebito';
 export * from './SelectTipoComprobanteBasico';
 export * from './SelectTipoIgv';
+export * from './SwitchController';
 export * from './TableEmpty';
 export * from './TableError';
 export * from './TableSkeleton';

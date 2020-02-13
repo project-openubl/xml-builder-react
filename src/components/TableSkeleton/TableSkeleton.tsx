@@ -2,7 +2,7 @@ import React from "react";
 import { Table, TableHeader, TableBody, ICell } from "@patternfly/react-table";
 import Skeleton from "@material-ui/lab/Skeleton";
 
-export interface Props {
+export interface TableSkeletonProps {
   colSize?: number;
   rowSize: number;
   columns?: ICell[];
@@ -10,7 +10,7 @@ export interface Props {
 
 export interface State {}
 
-export class TableSkeleton extends React.Component<Props, State> {
+export class TableSkeleton extends React.Component<TableSkeletonProps, State> {
   createColumns = () => {
     const { colSize } = this.props;
     return [...Array(colSize)].map(() => ({

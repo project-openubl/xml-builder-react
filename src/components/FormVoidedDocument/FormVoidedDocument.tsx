@@ -13,7 +13,7 @@ import {
 } from "@patternfly/react-core";
 import { CalendarAltIcon } from "@patternfly/react-icons";
 import { SelectTipoComprobanteBasico } from "../SelectTipoComprobanteBasico";
-import { toInput } from "./VoidedDocumentUtils";
+import { toInput } from "./Utils";
 
 export type FormVoidedDocumentData = {
   numero: number;

@@ -13,14 +13,14 @@ import {
   Button
 } from "@patternfly/react-core";
 
-export interface Props {
+export interface TableErrorProps {
   columns: (ICell | string)[];
   onRetry?: (event?: any) => void;
 }
 
 interface State {}
 
-export class TableError extends React.Component<Props, State> {
+export class TableError extends React.Component<TableErrorProps, State> {
   render() {
     const { columns, onRetry } = this.props;
     return (
