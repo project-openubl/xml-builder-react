@@ -1,7 +1,7 @@
 /** Keep alphabetically sorted */
 export * from './ButtonAboutProject';
 export * from './ButtonViewModal';
-export * from './DocumentsPageTabs';
+export * from './FormVoidedDocument';
 export * from './HeaderProject';
 export * from './InputSearchForm';
 export * from './LayoutBasicProject';
@@ -13,3 +13,4 @@ export * from './SelectTipoComprobanteBasico';
 export * from './SelectTipoIgv';
 export * from './TableEmpty';
 export * from './TableError';
+export * from './TabsDocument';

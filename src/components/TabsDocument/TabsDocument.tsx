@@ -17,7 +17,7 @@ export interface DocumentsPageTabsProps {
   topPageSection?: React.ReactNode;
 }
 
-export const DocumentsPageTabs: React.FC<DocumentsPageTabsProps> = ({
+export const TabsDocument: React.FC<DocumentsPageTabsProps> = ({
   activeKey,
   onTabSelect,
   topPageSection,
