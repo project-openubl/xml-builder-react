@@ -18,4 +18,5 @@ export * from './SelectTipoComprobanteBasico';
 export * from './SelectTipoIgv';
 export * from './TableEmpty';
 export * from './TableError';
+export * from './TableSkeleton';
 export * from './TabsDocument';
