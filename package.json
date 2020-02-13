@@ -88,7 +88,9 @@
     "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-to-json": "^3.4.4",
     "jest-enzyme": "^7.1.2",
+    "react-ace": "^8.0.0",
     "react-hook-form": "^4.9.3",
+    "react-json-view": "^1.19.1",
     "yup": "^0.28.1"
   }
 }
