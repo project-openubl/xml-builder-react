@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import * as React from "react";
 import { useForm, useFieldArray, Controller } from "react-hook-form";
 import * as yup from "yup";
 import {
@@ -73,7 +73,7 @@ export interface FormStandardDocumentProps {
 export const FormStandardDocument: React.FC<FormStandardDocumentProps> = ({
   onSubmit
 }) => {
-  const [isOpenRows, setIsOpenRows] = useState([false]);
+  const [isOpenRows, setIsOpenRows] = React.useState([false]);
 
   const validationSchema = yup.object().shape({
     tipoComprobante: yup
@@ -177,7 +177,7 @@ export const FormStandardDocument: React.FC<FormStandardDocumentProps> = ({
       .min(1, "Este campo debe de contener al menos 1 elemento.")
   });
 
-  const defaultDetalleValues = {
+  const defaultDetalleValues: any = {
     cantidad: 1,
     descripcion: "Nombre de producto o servicio",
     precioUnitario: 1,
@@ -185,7 +185,7 @@ export const FormStandardDocument: React.FC<FormStandardDocumentProps> = ({
     unidadMedida: undefined,
     icb: undefined
   };
-  const defaultValues = {
+  const defaultValues: any = {
     tipoComprobante: "FACTURA",
     serie: "F001",
     numero: 1,

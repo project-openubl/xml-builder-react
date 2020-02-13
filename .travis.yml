@@ -9,6 +9,9 @@ jobs:
     - stage: Test
       script:
         - yarn test --watchAll=false -- --coverage && npx codecov
+    - stage: Build
+      script:
+        - yarn build
     - stage: GithubPage
       script:
         - yarn build-storybook

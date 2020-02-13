@@ -88,7 +88,7 @@ export const FormVoidedDocument: React.FC<FormVoidedDocumentProps> = ({ onSubmit
   let today = new Date().toISOString();
   today = today.substring(0, today.indexOf("T"));
 
-  const defaultValues = {
+  const defaultValues: any = {
     numero: 1,
     fechaEmision: undefined,
     proveedorRuc: "12345678912",
