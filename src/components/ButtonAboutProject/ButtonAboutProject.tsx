@@ -8,7 +8,7 @@ import {
   ButtonVariant
 } from "@patternfly/react-core";
 import { HelpIcon } from "@patternfly/react-icons";
-import brandImg from "../../styles/assets/images/logo.png";
+import brandImg from "../../../styles/assets/images/logo.png";
 
 export interface ButtonAboutProjectProps {
   version: string;

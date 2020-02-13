@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 import {
   PageHeader,
   Brand,
@@ -8,7 +8,7 @@ import {
 } from "@patternfly/react-core";
 import { css } from "@patternfly/react-styles";
 import accessibleStyles from "@patternfly/react-styles/css/utilities/Accessibility/accessibility";
-import imgBrandNavBar from "../../styles/assets/images/logo-navbar.svg";
+import imgBrandNavBar from "../../../styles/assets/images/logo-navbar.svg";
 
 export interface HeaderProjectProps {
   aboutButton: React.ReactNode;

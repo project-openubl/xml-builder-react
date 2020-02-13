@@ -26,7 +26,6 @@ import {
   FileExportIcon,
   ApplicationsIcon
 } from "@patternfly/react-icons";
-import brandImg from "../../styles/assets/images/logo.png";
 
 export interface PageHomeProps {
   welcomeMessage: string;
@@ -42,11 +41,6 @@ export const PageHome: React.FC<PageHomeProps> = ({ welcomeMessage }) => {
             Crea tus comprobantes electrónicos usando los APIs del servidor.
           </Text>
         </TextContent>
-      </PageSection>
-      <PageSection variant={PageSectionVariants.light}>
-        <Bullseye>
-          <img src={brandImg} height="250" width="250" alt="Logo" />
-        </Bullseye>
       </PageSection>
       <PageSection>
         <Grid lg={4} gutter="md">
