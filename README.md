@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/project-openubl/xml-builder-react.svg?branch=master)](https://travis-ci.org/project-openubl/xml-builder-react)
+[![codecov](https://codecov.io/gh/project-openubl/xml-builder-react/branch/master/graph/badge.svg)](https://codecov.io/gh/project-openubl/xml-builder-react)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
