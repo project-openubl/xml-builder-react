@@ -10,7 +10,7 @@ export interface LayoutBasicProjectProps {
   githubIssuesURL: string;
   documentationURL: string;
   githubSourceCodeURL: string;
-  sidebar: React.ReactNode;
+  sidebarNav: React.ReactNode;
 }
 
 interface State {}
@@ -50,13 +50,13 @@ export class LayoutBasicProject extends React.Component<
   };
 
   render() {
-    const { sidebar, children } = this.props;
+    const { sidebarNav, children } = this.props;
 
     return (
       <React.Fragment>
         <Page
           header={<HeaderProject aboutButton={this.renderAboutButton()} />}
-          sidebar={<PageSidebar nav={sidebar} theme="dark" />}
+          sidebar={<PageSidebar nav={sidebarNav} theme="dark" />}
           isManagedSidebar
           skipToContent={this.renderPageSkipToContent()}
         >

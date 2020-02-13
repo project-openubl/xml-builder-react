@@ -38,13 +38,11 @@
     "typescript": "~3.7.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "build:lib": "yarn build:babel && yarn build:types && node ./scripts/copyTS.js && node ./scripts/copyStyles.js",
+    "build": "yarn build:babel && yarn build:types && node ./scripts/copyTS.js && node ./scripts/copyStyles.js",
     "build:babel": "concurrently \"yarn build:babel:esm && yarn build:babel:umd\" \"yarn build:babel:cjs\"",
     "build:babel:cjs": "BABEL_ENV=cjs babel --source-maps --extensions \".js,.ts,.tsx\" src --out-dir dist/js --presets=@babel/env",
     "build:babel:esm": "BABEL_ENV=esm babel --source-maps --extensions \".js,.ts,.tsx\" src --out-dir dist/esm",
@@ -80,10 +78,16 @@
     "@storybook/addons": "^6.0.0-alpha.10",
     "@storybook/preset-create-react-app": "^1.5.2",
     "@storybook/react": "^6.0.0-alpha.10",
+    "@types/enzyme": "^3.10.5",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
     "@types/yup": "^0.26.30",
     "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
     "babel-plugin-typescript-to-proptypes": "^1.2.1",
     "concurrently": "^5.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
+    "jest-enzyme": "^7.1.2",
     "react-hook-form": "^4.9.3",
     "yup": "^0.28.1"
   }
