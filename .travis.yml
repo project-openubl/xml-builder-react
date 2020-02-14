@@ -21,9 +21,7 @@ jobs:
         provider: pages
         skip_cleanup: true
         github_token: $GITHUB_TOKEN
-        local_dir: storybook-static
-        repo: project-openubl/xml-builder-react
-        target_branch: gh-pages
         keep_history: true
+        local_dir: storybook-static
         on:
           branch: master
