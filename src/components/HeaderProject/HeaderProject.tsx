@@ -8,10 +8,10 @@ import {
 } from "@patternfly/react-core";
 import { css } from "@patternfly/react-styles";
 import accessibleStyles from "@patternfly/react-styles/css/utilities/Accessibility/accessibility";
-import imgBrandNavBar from "../../../styles/assets/images/logo-navbar.svg";
 
 export interface HeaderProjectProps {
   aboutButton: React.ReactNode;
+  navBrandImageSrc: string;
 }
 
 interface State {}
@@ -36,9 +36,10 @@ export class HeaderProject extends React.Component<HeaderProjectProps, State> {
   };
 
   render() {
+    const { navBrandImageSrc } = this.props;
     return (
       <PageHeader
-        logo={<Brand src={imgBrandNavBar} alt="Project OpenUBL" />}
+        logo={<Brand src={navBrandImageSrc} alt="Project OpenUBL" />}
         toolbar={this.renderPageToolbar()}
         showNavToggle
       />

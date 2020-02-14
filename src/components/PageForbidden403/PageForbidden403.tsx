@@ -9,7 +9,7 @@ import {
 } from "@patternfly/react-core";
 import { LockIcon } from "@patternfly/react-icons";
 
-export const PageForbidden403: React.FC = () => {
+export const PageForbidden403: React.FC = ({ children }) => {
   return (
     <React.Fragment>
       <PageSection>
@@ -21,6 +21,7 @@ export const PageForbidden403: React.FC = () => {
               trying to open in your web browser is a resource that you're not
               allowed to access.
             </Title>
+            {children}
           </EmptyState>
         </Bullseye>
       </PageSection>

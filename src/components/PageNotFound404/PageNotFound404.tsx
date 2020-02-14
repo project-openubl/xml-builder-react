@@ -9,7 +9,7 @@ import {
 } from "@patternfly/react-core";
 import { UnknownIcon } from "@patternfly/react-icons";
 
-export const PageNotFound404: React.FC = () => {
+export const PageNotFound404: React.FC = ({ children }) => {
   return (
     <React.Fragment>
       <PageSection>
@@ -21,6 +21,7 @@ export const PageNotFound404: React.FC = () => {
               exists.
             </Title>
           </EmptyState>
+          {children}
         </Bullseye>
       </PageSection>
     </React.Fragment>

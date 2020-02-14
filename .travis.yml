@@ -12,7 +12,9 @@ jobs:
     - stage: Build
       script:
         - yarn build
+        - yarn build-storybook
     - stage: GithubPage
+      if: branch = master
       script:
         - yarn build-storybook
       deploy:

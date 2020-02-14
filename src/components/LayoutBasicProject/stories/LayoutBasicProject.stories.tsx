@@ -16,6 +16,9 @@ import {
 } from "@patternfly/react-core";
 import { MusicIcon } from "@patternfly/react-icons";
 
+import brandImageSrc from "../../../styles/assets/images/logo.png";
+import navBrandImageSrc from "../../../styles/assets/images/logo-navbar.svg";
+
 storiesOf("Project | Layout Basic", module).add("Default", () => (
   <LayoutBasicProject
     version="1.0.0"
@@ -31,6 +34,8 @@ storiesOf("Project | Layout Basic", module).add("Default", () => (
         </NavGroup>
       </Nav>
     }
+    brandImageSrc={brandImageSrc}
+    navBrandImageSrc={navBrandImageSrc}
   >
     <PageSection>
       <Bullseye>

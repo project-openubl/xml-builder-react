@@ -11,6 +11,8 @@ export interface LayoutBasicProjectProps {
   documentationURL: string;
   githubSourceCodeURL: string;
   sidebarNav: React.ReactNode;
+  brandImageSrc: string;
+  navBrandImageSrc: string;
 }
 
 interface State {}
@@ -34,7 +36,8 @@ export class LayoutBasicProject extends React.Component<
       swaggerApiURL,
       githubIssuesURL,
       documentationURL,
-      githubSourceCodeURL
+      githubSourceCodeURL,
+      brandImageSrc
     } = this.props;
 
     return (
@@ -45,17 +48,23 @@ export class LayoutBasicProject extends React.Component<
         githubIssuesURL={githubIssuesURL}
         documentationURL={documentationURL}
         swaggerApiURL={swaggerApiURL}
+        brandImageSrc={brandImageSrc}
       />
     );
   };
 
   render() {
-    const { sidebarNav, children } = this.props;
+    const { sidebarNav, navBrandImageSrc, children } = this.props;
 
     return (
       <React.Fragment>
         <Page
-          header={<HeaderProject aboutButton={this.renderAboutButton()} />}
+          header={
+            <HeaderProject
+              navBrandImageSrc={navBrandImageSrc}
+              aboutButton={this.renderAboutButton()}
+            />
+          }
           sidebar={<PageSidebar nav={sidebarNav} theme="dark" />}
           isManagedSidebar
           skipToContent={this.renderPageSkipToContent()}

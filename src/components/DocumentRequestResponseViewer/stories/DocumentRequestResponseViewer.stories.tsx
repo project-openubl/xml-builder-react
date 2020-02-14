@@ -15,6 +15,31 @@ storiesOf("Components | Document RR Viewer", module)
     };
     return <DocumentRequestResponseViewer requestObj={requestObj} />;
   })
+  .add("Big Request", () => {
+    const requestObj = {
+      stringField1: "value",
+      booleanField1: true,
+      numberField1: 100,
+      dateField1: new Date(),
+      stringField2: "value",
+      booleanField2: true,
+      numberField2: 100,
+      dateField2: new Date(),
+      stringField3: "value",
+      booleanField3: true,
+      numberField3: 100,
+      dateField3: new Date(),
+      stringField4: "value",
+      booleanField4: true,
+      numberField4: 100,
+      dateField4: new Date(),
+      stringField5: "value",
+      booleanField5: true,
+      numberField5: 100,
+      dateField5: new Date()
+    };
+    return <DocumentRequestResponseViewer requestObj={requestObj} />;
+  })
   .add("Request and response", () => {
     const requestObj = {
       requestStringField: "value",

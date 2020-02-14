@@ -5,7 +5,6 @@ exports[`Renders without crashing 1`] = `
   logo={
     <Brand
       alt="Project OpenUBL"
-      src="logo-navbar.svg"
     />
   }
   showNavToggle={true}

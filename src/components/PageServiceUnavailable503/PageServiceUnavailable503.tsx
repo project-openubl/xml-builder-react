@@ -9,7 +9,7 @@ import {
 } from "@patternfly/react-core";
 import { ClockIcon } from "@patternfly/react-icons";
 
-export const PageServiceUnavailable503: React.FC = () => {
+export const PageServiceUnavailable503: React.FC = ({ children }) => {
   return (
     <React.Fragment>
       <PageSection>
@@ -22,6 +22,7 @@ export const PageServiceUnavailable503: React.FC = () => {
               or down for maintenance.
             </Title>
           </EmptyState>
+          {children}
         </Bullseye>
       </PageSection>
     </React.Fragment>

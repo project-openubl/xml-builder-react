@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 import {
   AboutModal,
   TextContent,
@@ -8,7 +8,6 @@ import {
   ButtonVariant
 } from "@patternfly/react-core";
 import { HelpIcon } from "@patternfly/react-icons";
-import brandImg from "../../../styles/assets/images/logo.png";
 
 export interface ButtonAboutProjectProps {
   version: string;
@@ -17,13 +16,17 @@ export interface ButtonAboutProjectProps {
   githubIssuesURL: string;
   documentationURL: string;
   swaggerApiURL: string;
+  brandImageSrc: string;
 }
 
 interface State {
   isOpen: boolean;
 }
 
-export class ButtonAboutProject extends React.Component<ButtonAboutProjectProps, State> {
+export class ButtonAboutProject extends React.Component<
+  ButtonAboutProjectProps,
+  State
+> {
   constructor(props: ButtonAboutProjectProps) {
     super(props);
     this.state = {
@@ -44,7 +47,8 @@ export class ButtonAboutProject extends React.Component<ButtonAboutProjectProps,
       githubSourceCodeURL,
       githubIssuesURL,
       documentationURL,
-      swaggerApiURL
+      swaggerApiURL,
+      brandImageSrc
     } = this.props;
 
     const { isOpen } = this.state;
@@ -63,7 +67,7 @@ export class ButtonAboutProject extends React.Component<ButtonAboutProjectProps,
           isOpen={isOpen}
           onClose={this.toggleButton}
           trademark="COPYRIGHT © 2020. PROJECT OPENUBL"
-          brandImageSrc={brandImg}
+          brandImageSrc={brandImageSrc}
           brandImageAlt="Logo"
           productName={productName}
         >

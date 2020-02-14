@@ -1,6 +1,6 @@
 import { addons } from "@storybook/addons";
 import { themes } from "@storybook/theming";
-import logo from "../styles/assets/images/logo-navbar.svg";
+import logo from "../src/styles/assets/images/logo-navbar.svg";
 
 addons.setConfig({
   theme: {

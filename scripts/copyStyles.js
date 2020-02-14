@@ -6,7 +6,7 @@ const { parse: parseCSS, stringify: stringifyCSS } = require("css");
 
 const baseCSSFilename = "base.css";
 const stylesDir = resolve(__dirname, "../dist/styles");
-const pfDir = dirname(require.resolve(`../styles/${baseCSSFilename}`));
+const pfDir = dirname(require.resolve(`../src/styles/${baseCSSFilename}`));
 
 const css = readFileSync(join(pfDir, baseCSSFilename), "utf8");
 const ast = parseCSS(css);

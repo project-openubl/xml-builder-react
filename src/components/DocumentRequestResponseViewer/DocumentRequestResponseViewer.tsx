@@ -69,13 +69,20 @@ export class DocumentRequestResponseViewer extends React.Component<
     return (
       <Card>
         <CardBody>
-          <Stack gutter="sm">           
+          <Stack gutter="sm">
             <StackItem>
               <Card>
                 <CardHeader>Request</CardHeader>
                 <CardBody>
                   {requestObj ? (
-                    <ReactJson src={requestObj} name={false} />
+                    <ReactJson
+                      src={requestObj}
+                      name={false}
+                      style={{
+                        height: "350px",
+                        overflowX: "auto"
+                      }}
+                    />
                   ) : (
                     <small>No hay datos que mostrar</small>
                   )}

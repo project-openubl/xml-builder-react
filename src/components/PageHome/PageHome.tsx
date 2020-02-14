@@ -15,8 +15,7 @@ import {
   Stack,
   StackItem,
   Grid,
-  GridItem,
-  Bullseye
+  GridItem
 } from "@patternfly/react-core";
 import {
   AngleRightIcon,
@@ -29,9 +28,13 @@ import {
 
 export interface PageHomeProps {
   welcomeMessage: string;
+  buttonAdministrarServidor: React.ReactElement;
 }
 
-export const PageHome: React.FC<PageHomeProps> = ({ welcomeMessage }) => {
+export const PageHome: React.FC<PageHomeProps> = ({
+  welcomeMessage,
+  buttonAdministrarServidor
+}) => {
   return (
     <React.Fragment>
       <PageSection variant={PageSectionVariants.light}>
@@ -53,9 +56,7 @@ export const PageHome: React.FC<PageHomeProps> = ({ welcomeMessage }) => {
                     Consola de administración
                   </Title>
                   <EmptyStateBody>Administra el servidor</EmptyStateBody>
-                  <Button className="pf-c-button pf-m-primary">
-                    Administrar
-                  </Button>
+                  {buttonAdministrarServidor}
                 </EmptyState>
               </CardBody>
             </Card>
