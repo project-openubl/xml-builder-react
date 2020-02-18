@@ -73,8 +73,7 @@ export const FormVoidedDocument: React.FC<FormVoidedDocumentProps> = ({ onSubmit
     proveedorCodigoPostal: yup
       .string()
       .trim()
-      .required("Este dato es requerido.")
-      .min(1, "Este campo debe de contener al menos 1 caracteres."),
+      .transform(value => (value ? value || undefined : undefined)),
     firmanteRuc: yup
       .string()
       .nullable()
@@ -93,7 +92,6 @@ export const FormVoidedDocument: React.FC<FormVoidedDocumentProps> = ({ onSubmit
     fechaEmision: undefined,
     proveedorRuc: "12345678912",
     proveedorNombreComercial: "Project OpenUBL",
-    proveedorCodigoPostal: "050101",
     tipoDocumentReference: "FACTURA",
     serieNumeroDocumentReference: "F001-1",
     fechaEmisionDocumentReference: today,
@@ -209,7 +207,7 @@ export const FormVoidedDocument: React.FC<FormVoidedDocumentProps> = ({ onSubmit
           </GridItem>
           <GridItem>
             <FormGroup
-              isRequired={true}
+              isRequired={false}
               label="Código postal"
               fieldId="proveedorCodigoPostal"
               isValid={!errors.proveedorCodigoPostal}
@@ -219,7 +217,7 @@ export const FormVoidedDocument: React.FC<FormVoidedDocumentProps> = ({ onSubmit
               }
             >
               <TextInput
-                isRequired
+                isRequired={false}
                 type="text"
                 id="proveedorCodigoPostal"
                 name="proveedorCodigoPostal"
