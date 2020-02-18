@@ -52,7 +52,7 @@ export type StandardDocumentFormData = {
   totalDescuentos: number;
   totalOtrosCargos: number;
   proveedorRuc: string;
-  proveedorNombreComercial: string;
+  razonSocial: string;
   proveedorCodigoPostal: string;
   clienteTipoDocumento: string;
   clienteNumeroDocumento: string;
@@ -115,7 +115,7 @@ export const FormStandardDocument: React.FC<FormStandardDocumentProps> = ({
       .trim("Dato inválido")
       .required("Este dato es requerido.")
       .min(1, "Este campo debe de contener al menos 1 caracteres."),
-    proveedorNombreComercial: yup
+    razonSocial: yup
       .string()
       .trim()
       .required("Este dato es requerido.")
@@ -141,12 +141,12 @@ export const FormStandardDocument: React.FC<FormStandardDocumentProps> = ({
       .min(1, "Este campo debe de contener al menos 1 caracteres."),
     firmanteRuc: yup
       .string()
-      .nullable()
-      .trim(),
+      .trim()
+      .transform(value => (value ? value || undefined : undefined)),
     firmanteRazonSocial: yup
       .string()
-      .nullable()
-      .trim(),
+      .trim()
+      .transform(value => (value ? value || undefined : undefined)),
     detalle: yup
       .array()
       .of(
@@ -190,7 +190,7 @@ export const FormStandardDocument: React.FC<FormStandardDocumentProps> = ({
     numero: 1,
     fechaEmision: undefined,
     proveedorRuc: "12345678912",
-    proveedorNombreComercial: "Project OpenUBL",
+    razonSocial: "Project OpenUBL",
     clienteTipoDocumento: "RUC",
     clienteNumeroDocumento: "12312312312",
     clienteNombre: "Nombre de mi cliente",
@@ -570,22 +570,22 @@ export const FormStandardDocument: React.FC<FormStandardDocumentProps> = ({
           <GridItem>
             <FormGroup
               isRequired={true}
-              label="Nombre comercial"
-              fieldId="proveedorNombreComercial"
-              isValid={!errors.proveedorNombreComercial}
+              label="Razón social"
+              fieldId="razonSocial"
+              isValid={!errors.razonSocial}
               helperTextInvalid={
-                errors.proveedorNombreComercial &&
-                errors.proveedorNombreComercial.message
+                errors.razonSocial &&
+                errors.razonSocial.message
               }
             >
               <TextInput
                 isRequired
                 type="text"
-                id="proveedorNombreComercial"
-                name="proveedorNombreComercial"
-                aria-describedby="proveedorNombreComercial"
+                id="razonSocial"
+                name="razonSocial"
+                aria-describedby="razonSocial"
                 ref={register}
-                isValid={!errors.proveedorNombreComercial}
+                isValid={!errors.razonSocial}
               />
             </FormGroup>
           </GridItem>
