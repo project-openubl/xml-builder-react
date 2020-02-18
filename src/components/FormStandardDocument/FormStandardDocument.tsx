@@ -123,8 +123,7 @@ export const FormStandardDocument: React.FC<FormStandardDocumentProps> = ({
     proveedorCodigoPostal: yup
       .string()
       .trim()
-      .required("Este dato es requerido.")
-      .min(1, "Este campo debe de contener al menos 1 caracteres."),
+      .transform(value => (value ? value || undefined : undefined)),
     clienteTipoDocumento: yup
       .string()
       .trim("Dato inválido")
@@ -169,7 +168,7 @@ export const FormStandardDocument: React.FC<FormStandardDocumentProps> = ({
           unidadMedida: yup
             .string()
             .trim()
-            .nullable(),
+            .transform(value => (value ? value || undefined : undefined)),
           icb: yup.boolean().nullable()
         })
       )
@@ -192,7 +191,6 @@ export const FormStandardDocument: React.FC<FormStandardDocumentProps> = ({
     fechaEmision: undefined,
     proveedorRuc: "12345678912",
     proveedorNombreComercial: "Project OpenUBL",
-    proveedorCodigoPostal: "050101",
     clienteTipoDocumento: "RUC",
     clienteNumeroDocumento: "12312312312",
     clienteNombre: "Nombre de mi cliente",
@@ -593,7 +591,7 @@ export const FormStandardDocument: React.FC<FormStandardDocumentProps> = ({
           </GridItem>
           <GridItem>
             <FormGroup
-              isRequired={true}
+              isRequired={false}
               label="Código postal"
               fieldId="proveedorCodigoPostal"
               isValid={!errors.proveedorCodigoPostal}
@@ -603,7 +601,7 @@ export const FormStandardDocument: React.FC<FormStandardDocumentProps> = ({
               }
             >
               <TextInput
-                isRequired
+                isRequired={false}
                 type="text"
                 id="proveedorCodigoPostal"
                 name="proveedorCodigoPostal"

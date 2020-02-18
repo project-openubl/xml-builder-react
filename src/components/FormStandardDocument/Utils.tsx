@@ -28,7 +28,7 @@ export const toInput = (form: StandardDocumentFormData): any => {
       descripcion: item.descripcion,
       precioUnitario: item.precioUnitario,
       cantidad: item.cantidad,
-      unidadMedida: item.unidadMedida ? item.unidadMedida : undefined,
+      unidadMedida: item.unidadMedida,
       tipoIGV: item.tipoIgv,
       icb: item.icb
     }))
