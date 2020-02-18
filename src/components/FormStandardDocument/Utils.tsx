@@ -9,7 +9,7 @@ export const toInput = (form: StandardDocumentFormData): any => {
     totalOtrosCargos: form.totalOtrosCargos,
     proveedor: {
       ruc: form.proveedorRuc,
-      razonSocial: form.razonSocial,
+      razonSocial: form.proveedorRazonSocial,
       codigoPostal: form.proveedorCodigoPostal
     },
     cliente: {

@@ -6,7 +6,7 @@ export const toInput = (form: FormVoidedDocumentData): any => {
     fechaEmision: form.fechaEmision ? form.fechaEmision.getTime() : undefined,
     proveedor: {
       ruc: form.proveedorRuc,
-      razonSocial: form.razonSocial,
+      razonSocial: form.proveedorRazonSocial,
       codigoPostal: form.proveedorCodigoPostal
     },
     firmante:

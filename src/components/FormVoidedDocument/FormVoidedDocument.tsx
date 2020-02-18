@@ -19,7 +19,7 @@ export type FormVoidedDocumentData = {
   numero: number;
   fechaEmision: Date;
   proveedorRuc: string;
-  razonSocial: string;
+  proveedorRazonSocial: string;
   proveedorCodigoPostal: string;
   firmanteRuc: string;
   firmanteRazonSocial: string;
@@ -65,7 +65,7 @@ export const FormVoidedDocument: React.FC<FormVoidedDocumentProps> = ({ onSubmit
       .trim("Dato inválido")
       .required("Este dato es requerido.")
       .min(1, "Este campo debe de contener al menos 1 caracteres."),
-    razonSocial: yup
+    proveedorRazonSocial: yup
       .string()
       .trim()
       .required("Este dato es requerido.")
@@ -78,7 +78,7 @@ export const FormVoidedDocument: React.FC<FormVoidedDocumentProps> = ({ onSubmit
       .string()
       .nullable()
       .trim(),
-    firmanteRazonSocial: yup
+      firmanteRazonSocial: yup
       .string()
       .nullable()
       .trim()
@@ -91,7 +91,7 @@ export const FormVoidedDocument: React.FC<FormVoidedDocumentProps> = ({ onSubmit
     numero: 1,
     fechaEmision: undefined,
     proveedorRuc: "12345678912",
-    razonSocial: "Project OpenUBL",
+    proveedorRazonSocial: "Project OpenUBL",
     tipoDocumentReference: "FACTURA",
     serieNumeroDocumentReference: "F001-1",
     fechaEmisionDocumentReference: today,
@@ -187,21 +187,21 @@ export const FormVoidedDocument: React.FC<FormVoidedDocumentProps> = ({ onSubmit
             <FormGroup
               isRequired={true}
               label="Razón social"
-              fieldId="razonSocial"
-              isValid={!errors.razonSocial}
+              fieldId="proveedorRazonSocial"
+              isValid={!errors.proveedorRazonSocial}
               helperTextInvalid={
-                errors.razonSocial &&
-                errors.razonSocial.message
+                errors.proveedorRazonSocial &&
+                errors.proveedorRazonSocial.message
               }
             >
               <TextInput
                 isRequired
                 type="text"
-                id="razonSocial"
-                name="razonSocial"
-                aria-describedby="razonSocial"
+                id="proveedorRazonSocial"
+                name="proveedorRazonSocial"
+                aria-describedby="proveedorRazonSocial"
                 ref={register}
-                isValid={!errors.razonSocial}
+                isValid={!errors.proveedorRazonSocial}
               />
             </FormGroup>
           </GridItem>
