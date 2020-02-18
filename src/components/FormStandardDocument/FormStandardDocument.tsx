@@ -53,6 +53,7 @@ export type StandardDocumentFormData = {
   totalOtrosCargos: number;
   proveedorRuc: string;
   proveedorRazonSocial: string;
+  proveedorNombreComercial: string;
   proveedorCodigoPostal: string;
   clienteTipoDocumento: string;
   clienteNumeroDocumento: string;
@@ -120,6 +121,10 @@ export const FormStandardDocument: React.FC<FormStandardDocumentProps> = ({
       .trim()
       .required("Este dato es requerido.")
       .min(1, "Este campo debe de contener al menos 1 caracteres."),
+    proveedorNombreComercial: yup
+      .string()
+      .trim()
+      .transform(value => (value ? value || undefined : undefined)),
     proveedorCodigoPostal: yup
       .string()
       .trim()
@@ -586,6 +591,28 @@ export const FormStandardDocument: React.FC<FormStandardDocumentProps> = ({
                 aria-describedby="proveedorRazonSocial"
                 ref={register}
                 isValid={!errors.proveedorRazonSocial}
+              />
+            </FormGroup>
+          </GridItem>
+          <GridItem>
+            <FormGroup
+              isRequired={false}
+              label="Nombre comercial"
+              fieldId="proveedorNombreComercial"
+              isValid={!errors.proveedorNombreComercial}
+              helperTextInvalid={
+                errors.proveedorNombreComercial &&
+                errors.proveedorNombreComercial.message
+              }
+            >
+              <TextInput
+                isRequired={false}
+                type="text"
+                id="proveedorNombreComercial"
+                name="proveedorNombreComercial"
+                aria-describedby="proveedorNombreComercial"
+                ref={register}
+                isValid={!errors.proveedorNombreComercial}
               />
             </FormGroup>
           </GridItem>

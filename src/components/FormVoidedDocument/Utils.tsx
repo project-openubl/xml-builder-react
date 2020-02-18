@@ -7,6 +7,7 @@ export const toInput = (form: FormVoidedDocumentData): any => {
     proveedor: {
       ruc: form.proveedorRuc,
       razonSocial: form.proveedorRazonSocial,
+      nombreComercial: form.proveedorNombreComercial,
       codigoPostal: form.proveedorCodigoPostal
     },
     firmante:
