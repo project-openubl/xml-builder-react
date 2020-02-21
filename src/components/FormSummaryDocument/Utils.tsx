@@ -28,7 +28,7 @@ export const toInput = (form: FormSummaryDocumentData): any => {
       tipoOperacion: item.tipoOperacion,
       tipoComprobante: item.tipoComprobante,
       importeTotal: item.importeTotal,
-      igv: item.icb,
+      igv: item.igv,
       icb: item.icb,
       totalOtrosCargos: item.totalOtrosCargos,
       totalOperacionesGravadas: item.totalOperacionesGravadas,

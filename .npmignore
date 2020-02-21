@@ -2,9 +2,9 @@ build
 dist/**/demos
 dist/**/examples
 dist/**/__snapshots__
-dist/**/__tests__
 dist/**/*.stories.js
 dist/**/*.test.js
 dist/**/*.map
 example
+storybook-static
 .storybook
