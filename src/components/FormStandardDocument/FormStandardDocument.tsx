@@ -35,7 +35,7 @@ import { SelectNotaDebito } from "../SelectNotaDebito";
 import { SelectTipoComprobanteBasico } from "../SelectTipoComprobanteBasico";
 import { toInput } from "./Utils";
 
-export type DetalleFormData = {
+export type StandardDocumentDetalleFormData = {
   cantidad: number;
   descripcion: string;
   precioUnitario: number;
@@ -60,7 +60,7 @@ export type StandardDocumentFormData = {
   clienteNombre: string;
   firmanteRuc: string;
   firmanteRazonSocial: string;
-  detalle: Array<DetalleFormData>;
+  detalle: Array<StandardDocumentDetalleFormData>;
 
   tipoNota: string;
   comprobanteAfectado: string;

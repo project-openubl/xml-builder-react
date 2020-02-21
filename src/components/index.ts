@@ -3,6 +3,7 @@ export * from './ButtonAboutProject';
 export * from './ButtonViewModal';
 export * from './DocumentRequestResponseViewer';
 export * from './FormStandardDocument';
+export * from './FormSummaryDocument';
 export * from './FormVoidedDocument';
 export * from './HeaderProject';
 export * from './InputSearchForm';

@@ -37,6 +37,7 @@ export const TabsDocument: React.FC<DocumentsPageTabsProps> = ({
         <Tabs isFilled activeKey={activeKey} onSelect={onTabSelect}>
           <Tab eventKey={0} title="Documentos básicos"></Tab>
           <Tab eventKey={1} title="Baja"></Tab>
+          <Tab eventKey={2} title="Resumen diario"></Tab>
         </Tabs>
       </PageSection>
       <PageSection>{children}</PageSection>

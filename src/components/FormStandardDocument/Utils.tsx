@@ -1,4 +1,4 @@
-import { StandardDocumentFormData } from "./FormStandardDocument";
+import { StandardDocumentFormData, StandardDocumentDetalleFormData } from "./FormStandardDocument";
 
 export const toInput = (form: StandardDocumentFormData): any => {
   const result: any = {
@@ -25,7 +25,7 @@ export const toInput = (form: StandardDocumentFormData): any => {
             razonSocial: form.firmanteRazonSocial
           }
         : undefined,
-    detalle: form.detalle.map((item: any) => ({
+    detalle: form.detalle.map((item: StandardDocumentDetalleFormData) => ({
       descripcion: item.descripcion,
       precioUnitario: item.precioUnitario,
       cantidad: item.cantidad,

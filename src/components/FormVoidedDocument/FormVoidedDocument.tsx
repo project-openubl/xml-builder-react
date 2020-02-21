@@ -83,12 +83,12 @@ export const FormVoidedDocument: React.FC<FormVoidedDocumentProps> = ({
       .transform(value => (value ? value || undefined : undefined)),
     firmanteRuc: yup
       .string()
-      .nullable()
-      .trim(),
+      .trim()
+      .transform(value => (value ? value || undefined : undefined)),
     firmanteRazonSocial: yup
       .string()
-      .nullable()
       .trim()
+      .transform(value => (value ? value || undefined : undefined))
   });
 
   let today = new Date().toISOString();

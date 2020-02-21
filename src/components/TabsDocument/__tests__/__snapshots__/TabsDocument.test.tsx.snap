@@ -31,6 +31,10 @@ exports[`Renders without crashing 1`] = `
         eventKey={1}
         title="Baja"
       />
+      <Tab
+        eventKey={2}
+        title="Resumen diario"
+      />
     </Component>
   </PageSection>
   <PageSection />
