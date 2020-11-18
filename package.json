@@ -69,7 +69,7 @@
     "@material-ui/core": "^4.9.2",
     "@material-ui/lab": "^4.0.0-alpha.42",
     "@patternfly/react-core": "^3.134.2",
-    "@patternfly/react-icons": "^3.14.42",
+    "@patternfly/react-icons": "^4.7.18",
     "@patternfly/react-table": "^2.25.6",
     "@storybook/addon-actions": "^6.0.0-alpha.10",
     "@storybook/addon-docs": "^6.0.0-alpha.10",
@@ -97,7 +97,7 @@
   },
   "peerDependencies": {
     "@patternfly/react-core": "^3.134.2",
-    "@patternfly/react-icons": "^3.14.42",
+    "@patternfly/react-icons": "^4.7.18",
     "@patternfly/react-table": "^2.25.6",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"

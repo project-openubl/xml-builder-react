@@ -1568,12 +1568,17 @@
     focus-trap-react "^4.0.1"
     tippy.js "5.1.2"
 
-"@patternfly/react-icons@^3.14.39", "@patternfly/react-icons@^3.14.42":
+"@patternfly/react-icons@^3.14.39":
   version "3.14.42"
   resolved "https://registry.yarnpkg.com/@patternfly/react-icons/-/react-icons-3.14.42.tgz#68782223762754bbaeac0c2368560159d8d6e5d0"
   integrity sha512-62EZ9k20pO0q63yo4F8kXKscuqY2CfmH7MFjbrvph7kv54pguR05qUFz/zV21nVzk7fXYVkzGhrTEaZYynh/XQ==
   dependencies:
     "@fortawesome/free-brands-svg-icons" "^5.8.1"
+
+"@patternfly/react-icons@^4.7.18":
+  version "4.7.18"
+  resolved "https://registry.yarnpkg.com/@patternfly/react-icons/-/react-icons-4.7.18.tgz#c188f1f460f62bd9ee262f1da580caaefbf8fdf9"
+  integrity sha512-Kd0JjeVCESpMJGb5ZkLXvAdCuklV9dYGUkcTO18WMyXQ57s9+xXjVA77wojmp6Ru1ZCWOP5bLXZOKmwVnOfUpQ==
 
 "@patternfly/react-styles@^3.6.26":
   version "3.6.26"
